@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiMenu, HiX } from "react-icons/hi";
 import Logo from "../common/Logo";
-import { navLinks } from "../../data/siteData";
 import useScrollPosition from "../../hooks/useScrollPosition";
 
 export default function Navbar() {
@@ -24,21 +23,6 @@ export default function Navbar() {
     >
       <nav className="container-px mx-auto flex max-w-8xl items-center justify-between py-4">
         <Logo />
-
-        <ul className="hidden lg:flex items-center gap-9">
-          {navLinks.map((link) => (
-            <li key={link.label}>
-              <a
-                href={link.href}
-                className="text-sm font-medium text-ink/80 transition-colors hover:text-primary"
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-
-
         <button
           aria-label="Toggle menu"
           className="lg:hidden flex h-10 w-10 items-center justify-center rounded-xl border border-border text-ink"
@@ -57,19 +41,6 @@ export default function Navbar() {
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="lg:hidden overflow-hidden bg-white border-t border-border"
           >
-            <ul className="flex flex-col gap-1 px-6 py-4">
-              {navLinks.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    onClick={handleLinkClick}
-                    className="block rounded-xl px-3 py-3 text-sm font-medium text-ink/80 transition-colors hover:bg-surface-alt hover:text-primary"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
           </motion.div>
         )}
       </AnimatePresence>

@@ -14,18 +14,11 @@ export const company = {
   hours: "Mon – Fri: 9:00 AM – 6:00 PM PST",
 };
 
-export const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#why-choose-us" },
-];
+
 
 export const footerLinks = {
   quickLinks: [
     { label: "Home", href: "#home" },
-    { label: "About Us", href: "#about" },
-    { label: "Testimonials", href: "#testimonials" },
-    
   ],
   support: [
     { label: "FAQs", href: "#faq" },
