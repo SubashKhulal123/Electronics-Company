@@ -4,7 +4,7 @@ import { HiOutlineHome } from "react-icons/hi2";
 import { PiHeadphones } from "react-icons/pi";
 import SectionHeading from "../common/SectionHeading";
 import AnimatedSection from "../common/AnimatedSection";
-import { categories } from "../../data/products";
+import { categories } from "../../data/categories";
 
 const iconMap = {
   smartphone: HiOutlineDevicePhoneMobile,
