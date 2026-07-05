@@ -16,19 +16,19 @@ export const company = {
 
 export const navLinks = [
   { label: "Home", href: "#home" },
-  { label: "Products", href: "#products" },
+  // { label: "Products", href: "#products" },
   { label: "About", href: "#about" },
   { label: "Services", href: "#why-choose-us" },
-  { label: "Contact", href: "#contact" },
+  // { label: "Contact", href: "#contact" },
 ];
 
 export const footerLinks = {
   quickLinks: [
     { label: "Home", href: "#home" },
-    { label: "Shop Products", href: "#products" },
+    // { label: "Shop Products", href: "#products" },
     { label: "About Us", href: "#about" },
     { label: "Testimonials", href: "#testimonials" },
-    { label: "Contact", href: "#contact" },
+    // { label: "Contact", href: "#contact" },
   ],
   support: [
     { label: "FAQs", href: "#faq" },

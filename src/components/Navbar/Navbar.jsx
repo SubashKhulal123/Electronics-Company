@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiMenu, HiX } from "react-icons/hi";
-import { HiOutlineShoppingBag } from "react-icons/hi2";
+// import { HiOutlineShoppingBag } from "react-icons/hi2";
 import Logo from "../common/Logo";
 import { navLinks } from "../../data/siteData";
 import useScrollPosition from "../../hooks/useScrollPosition";
@@ -39,12 +39,6 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden lg:flex items-center">
-          <a href="#products" className="btn-primary">
-            <HiOutlineShoppingBag className="text-base" />
-            Shop Now
-          </a>
-        </div>
 
         <button
           aria-label="Toggle menu"
@@ -76,12 +70,6 @@ export default function Navbar() {
                   </a>
                 </li>
               ))}
-              <li className="pt-2">
-                <a href="#products" onClick={handleLinkClick} className="btn-primary w-full">
-                  <HiOutlineShoppingBag className="text-base" />
-                  Shop Now
-                </a>
-              </li>
             </ul>
           </motion.div>
         )}
