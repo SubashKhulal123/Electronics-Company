@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiMenu, HiX } from "react-icons/hi";
-// import { HiOutlineShoppingBag } from "react-icons/hi2";
 import Logo from "../common/Logo";
 import { navLinks } from "../../data/siteData";
 import useScrollPosition from "../../hooks/useScrollPosition";
